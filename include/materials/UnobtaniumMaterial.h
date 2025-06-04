@@ -15,4 +15,7 @@ protected:
 
   /// The value of k
   ADMaterialProperty<Real> & _k;
+
+  /// The variable gradient
+  const ADVariableGradient & _grad_u;
 };
