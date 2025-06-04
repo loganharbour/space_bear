@@ -22,5 +22,5 @@ UnobtaniumMaterial::UnobtaniumMaterial(const InputParameters & parameters)
 void
 UnobtaniumMaterial::computeQpProperties()
 {
-  _k[_qp] = 1.0 / std::sqrt(1 + _grad_u * _grad_u);
+  _k[_qp] = 1.0 / std::sqrt(1 + _grad_u[_qp] * _grad_u[_qp]);
 }
